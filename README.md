@@ -17,3 +17,14 @@ This repo contains the learnings of Swift language and iOS development.
     - Tuples
     - Dictionaries
     - Enums
+  - Operators and Conditions
+    - Arithmetic Operators
+    - Operator Overloading
+    - Compound Operators
+    - Comparison Operators
+    - Conditional Statements
+    - Logical Operators
+    - Ternary Conditional Operator
+    - Switch Statements
+    - Range Operators
+    

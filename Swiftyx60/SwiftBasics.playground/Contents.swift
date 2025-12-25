@@ -150,7 +150,7 @@ print("RGB - Green Color: \(rgbColor.green)")
 
 // Summary: Tuples are useful for grouping related values together without creating a custom data type.
 // Tuples can contain values of different types, making them flexible for various use cases.
-// Tuples have a fixed size and cannot be resized like arrays or sets.
+// It have a fixed size and cannot be resized like arrays or sets.
 // Tuples are value types, meaning they are copied when assigned to a new variable or passed to a function.
 // Tuples have a fixed type, meaning the types of the elements cannot be changed after the tuple is created.
 // Advantages are lightweight and easy to use for grouping related values.
@@ -231,3 +231,196 @@ print("Ordered food: \(cheesePizza)")
 // Enums can have raw values of different types, such as Int, String, or Double. It can have associated values to store additional information for each case.
 // Advantages include improved code readability, type safety, and ability to represent complex data structures.
 // Disadvantages include limited flexibility in adding new cases and potential for increased complexity in certain scenarios.
+
+// MARK: Operators and Conditions
+// ====================Arithmetic Operators=================
+// def: Arithmetic operators are symbols used to perform mathematical operations on numeric values.(+,-,*,/,%)
+// syntax: Arithmetic operators are used between two numeric values or variables to perform calculations.
+// usage: Arithmetic operators are commonly used in mathematical calculations, data processing, and algorithm implementations.
+
+let sum: Int = 10 + 20
+print("Sum: \(sum)")
+
+let difference: Int = sum - 15
+print("Difference: \(difference)")
+
+let product: Int = sum * difference
+print("Product: \(product)")
+
+let quotient: Int = product / difference
+print("Quotient: \(quotient)")
+
+let remainder: Int = product % 12
+print("Remainder: \(remainder)")
+
+// Summary: Arithmetic operators are fundamental for performing mathematical calculations in Swift.
+// They can be used with different numeric types, such as Int and Double.
+
+// ==================Operator Overloading=================
+let distance = 20 + 25
+print("Distance: \(distance)")
+
+let mountainName = "Mount " + "Everest"
+print("Mountain Name: \(mountainName)")
+
+let northCities = ["New Delhi", "Chandigarh", "Jaipur"]
+let southCities = ["Bangalore", "Hyderabad", "Chennai"]
+
+let southAndNorthCities = northCities + southCities
+print("Cities in South and North: \(southAndNorthCities)")
+// Summary: Operator overloading allows the same operator to be used with different data types.
+// It enhances code readability and expressiveness by allowing intuitive operations on custom types.
+// However, excessive operator overloading can lead to confusion and reduced code clarity if not used properly.
+// It won't let us use the operator for different types if it's not defined for those types.
+
+// ===================Compound Operators=================
+// def: Compound operators are shorthand operators that combine an arithmetic operation with assignment.
+// syntax: Compound operators are used with a variable on the left side and an arithmetic operation followed by an equal sign (=) on the right side.
+// usage: Compound operators are commonly used to simplify code and make it more concise when performing arithmetic operations and updating variable values.
+
+var weight = 70
+weight += 5
+print("Updated Weight after += : \(weight)")
+
+var mountainQuote = "Mount Everest is the highest peak"
+mountainQuote += " in the world."
+print("Updated Mountain Quote after += : \(mountainQuote)")
+// Summary: Compound operators provide a concise way to perform arithmetic operations and update variable values.
+// They enhance code readability and reduce redundancy by combining operations into a single expression.
+
+// ===================Comparison Operators=================
+// def: Comparison operators are symbols used to compare two values and return a Boolean result indicating the relationship between them.(==, !=, >, <, >=, <=)
+// syntax: Comparison operators are used between two values or variables to evaluate their relationship.
+// usage: Comparison operators are commonly used in conditional statements, loops, and data validation.
+
+let numberOfOceans = 5
+let numberOfContinents = 7
+
+if numberOfOceans > numberOfContinents {
+    print("There are more oceans than continents.")
+} else if numberOfOceans < numberOfContinents {
+    print("There are more continents than oceans.")
+} else if numberOfOceans == numberOfContinents {
+    print("The number of oceans and continents are equal.")
+} else if numberOfOceans != numberOfContinents {
+    print("The number of oceans and continents are not equal.")
+} else {
+    print("Comparison could not be made.")
+}
+
+let isEarthLargerThanMars = true
+let isEarthLargerThanJupiter = false
+
+if isEarthLargerThanMars && isEarthLargerThanJupiter {
+    print("Earth is larger than both Mars and Jupiter.")
+} else if isEarthLargerThanMars || isEarthLargerThanJupiter {
+    print("Earth is larger than either Mars or Jupiter.")
+} else {
+    print("Earth is not larger than Mars or Jupiter.")
+}
+
+let pacific = "Pacific Ocean"
+let atlantic = "Atlantic Ocean"
+
+if pacific == atlantic {
+    print("Both are the same ocean.")
+} else if pacific > atlantic {
+    print("Pacific Ocean comes after Atlantic Ocean alphabetically.")
+} else if pacific < atlantic {
+    print("Pacific Ocean comes before Atlantic Ocean alphabetically.")
+} else {
+    print("Comparison could not be made.")
+}
+
+// Summary: Comparison operators are essential for evaluating relationships between values in Swift.
+// They enable conditional logic and decision-making in code.
+// Comparison operators can be used with different data types, such as Int, Double, String, and Bool.
+// Strings are compared based on their alphabetical order.
+
+// ====================Conditional Statements==================
+// def: Conditional statements are used to execute different blocks of code based on certain conditions.(if, else if, else, switch)
+// syntax: Conditional statements are structured using keywords like if, else if, else, and switch, followed by conditions and code blocks.
+// usage: Conditional statements are commonly used for decision-making in programs, allowing different actions based on varying conditions.
+
+let temperature = 30
+if temperature > 30 {
+    print("It's a hot day.")
+} else if temperature < 15 {
+    print("It's a cold day.")
+} else {
+    print("It's a moderate day.")
+}
+
+// Logical Operators
+// def: Logical operators are symbols used to combine or negate Boolean values.(&&, ||, !)
+// syntax: Logical operators are used between Boolean values or expressions to evaluate complex conditions.
+// usage: Logical operators are commonly used in conditional statements and loops to create more complex decision-making logic.
+
+let isRaining = true
+let isSunny = false
+
+if isRaining && isSunny {
+    print("It's a rainy and sunny day, look out for rainbow")
+} else if isRaining || isSunny {
+    print("It's either raining or sunny.")
+} else if !isRaining && !isSunny {
+    print("It's neither raining nor sunny.")
+}
+
+// Summary: Conditional statements enable decision-making in Swift programs based on varying conditions.
+// Logical Operators allow for the combination and negation of Boolean values to create complex decision making logic.
+// They enhance code readability and maintainability by providing clear control flow structures.
+
+// Ternary Operator
+// def: The ternary operator is a shorthand conditional operator that evaluates a condition and returns one of two values based on the result.
+// syntax: The ternary operator is structured as condition ? valueIfTrue : valueIfFalse.
+// usage: The ternary operator is commonly used for simple conditional assignments and expressions.
+
+let heightOfMountEverst = 8848
+print("Mount Everest is \(heightOfMountEverst > 8000 ? "taller" : "shorter") than 8000 meters.")
+
+// Summary: The ternary operator provides a concise way to perform simple conditional assignments and expressions in Swift.
+// It enhances code readability by reducing the need for verbose if-else statements for simple conditions.
+
+// ==============Switch Statements=================
+// def: Switch statements are control flow structures that allow for multiple possible execution paths based on the value of a variable or expression.
+// syntax: Switch statements are structured using the switch keyword followed by the variable or expression to be evaluated and multiple case blocks.
+// usage: Switch statements are commonly used for handling multiple discrete values and executing different code blocks based on those values.
+
+let dayOfWeek = "Monday"
+switch dayOfWeek {
+case "Monday", "Tuesday", "Wednesday":
+    print("It's a weekday.")
+case "Thursday", "Friday":
+    print("It's almost the weekend.")
+case "Saturday", "Sunday":
+    print("It's the weekend!")
+default:
+    print("Holiday for Earthlings!")
+}
+
+// Summary: Switch statements provide a structured way to handle multiple discrete values in Swift.
+// Switch statements must be exhaustive, meaning all possible values must be covered either through cases or a default case.
+// Keyword 'fallthrough' is used to jump to nexrt case without checking its condition.
+
+// Range Operators
+// def: Range operators are symbols used to create ranges of values in Swift.(..<, ...)
+// syntax: Range operators are used to define a range of values between two endpoints.
+// usage: Range operators are commonly used in loops, array slicing, and conditional statements.
+
+let bmiValue = 26.5
+
+switch bmiValue {
+case ..<18.5:
+    print("Underweight")
+case 18.5..<24.9:
+    print("Normal weight")
+case 25..<29.9:
+    print("Overweight")
+default:
+    print("Obesity")
+}
+
+// Summary: Range operators provide a convenient way to define ranges of values in Swift.
+// Advantages include concise syntax and ease of use in loops and conditional statements.
+// Disadvantages include potential confusion with inclusive and exclusive ranges if not used carefully.
