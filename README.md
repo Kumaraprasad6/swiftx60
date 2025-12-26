@@ -43,4 +43,11 @@ This repo contains the learnings of Swift language and iOS development.
     - Closures as Function Parameters
     - Nonescaping Closures
     - Escaping Closures
+  - Structs
+    - Defining Structs
+    - Struct Properties and Methods
+    - Mutating Methods
+    - Struct Initializers
+    - Lazy Properties
+    - Access Controls
     
