@@ -36,4 +36,11 @@ This repo contains the learnings of Swift language and iOS development.
     - Function Parameters and Return Types
     - Variadic Parameter
     - Inout Parameters
+  - Closures
+    - Closure Expressions
+    - Trailing Closures
+    - Capturing Values
+    - Closures as Function Parameters
+    - Nonescaping Closures
+    - Escaping Closures
     
