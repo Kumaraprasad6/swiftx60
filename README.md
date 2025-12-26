@@ -31,5 +31,9 @@ This repo contains the learnings of Swift language and iOS development.
     - For-In Loops
     - While Loops
     - Repeat-While Loops
-    
+  - Functions
+    - Defining Functions
+    - Function Parameters and Return Types
+    - Variadic Parameter
+    - Inout Parameters
     
