@@ -27,4 +27,9 @@ This repo contains the learnings of Swift language and iOS development.
     - Ternary Conditional Operator
     - Switch Statements
     - Range Operators
+  - Loops
+    - For-In Loops
+    - While Loops
+    - Repeat-While Loops
+    
     
