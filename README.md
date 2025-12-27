@@ -50,4 +50,11 @@ This repo contains the learnings of Swift language and iOS development.
     - Struct Initializers
     - Lazy Properties
     - Access Controls
+  - Classes
+    - Class Definition
+    - Inheritance
+    - Method Overriding
+    - Final Classes
+    - Deinitializers
+    - Mutability of Class Instances
     
