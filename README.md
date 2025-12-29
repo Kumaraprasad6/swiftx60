@@ -62,4 +62,12 @@ This repo contains the learnings of Swift language and iOS development.
     - Protocol Inheritance
     - Protocol Conformance
     - Protocol Extensions
+  - Optionals
+    - Optional Types
+    - Unwrapping Optionals
+    - Force Unwrapping
+    - Optional Chaining
+    - Nil Coalescing Operator
+    - Failable initializers
+    - Type Casting
     
