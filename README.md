@@ -57,4 +57,9 @@ This repo contains the learnings of Swift language and iOS development.
     - Final Classes
     - Deinitializers
     - Mutability of Class Instances
+  - Protocols
+    - Defining Protocols
+    - Protocol Inheritance
+    - Protocol Conformance
+    - Protocol Extensions
     
